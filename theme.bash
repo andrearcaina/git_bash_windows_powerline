@@ -50,6 +50,7 @@ function __color {
     'M') bg=45;;
     'C') bg=46;;
     'W') bg=47;;
+    'V') bg=43;;
      *) bg=49;;
   esac
 
@@ -86,6 +87,7 @@ function __powerline_user_info_prompt {
 
   # Check if in a virtual environment
   if [[ -n "${VIRTUAL_ENV}" ]]; then
+    color="Y Bl"
     user_info="${user_info} [$(basename ${VIRTUAL_ENV})]"
   fi
 
