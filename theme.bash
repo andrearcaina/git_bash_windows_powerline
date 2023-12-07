@@ -42,31 +42,31 @@ function __color {
   local fg
   local mod
   case $1 in
-     'Bl') bg=40;;
-     'R') bg=41;;
-     'G') bg=42;;
-     'Y') bg=43;;
-     'B') bg=44;;
-     'M') bg=45;;
-     'C') bg=46;;
-     'W') bg=47;;
+    'Bl') bg=40;;
+    'R') bg=41;;
+    'G') bg=42;;
+    'Y') bg=43;;
+    'B') bg=44;;
+    'M') bg=45;;
+    'C') bg=46;;
+    'W') bg=47;;
      *) bg=49;;
   esac
 
   case $2 in
-     'Bl') fg=30;;
-     'R') fg=31;;
-     'G') fg=32;;
-     'Y') fg=33;;
-     'B') fg=34;;
-     'M') fg=35;;
-     'C') fg=36;;
-     'W') fg=37;;
-     *) fg=39;;
+    'Bl') fg=30;;
+    'R') fg=31;;
+    'G') fg=32;;
+    'Y') fg=33;;
+    'B') fg=34;;
+    'M') fg=35;;
+    'C') fg=36;;
+    'W') fg=37;;
+    *) fg=39;;
   esac
 
   case $3 in
-     'B') mod=1;;
+    'B') mod=1;;
      *) mod=0;;
   esac
 
