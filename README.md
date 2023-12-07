@@ -34,3 +34,6 @@ unset THEME
 ## License
 
 MIT
+
+## New Features
+- can show virtual environment now
