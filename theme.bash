@@ -83,8 +83,15 @@ function __powerline_user_info_prompt {
   else
     user_info="\u@\h"
   fi
+
+  # Check if in a virtual environment
+  if [[ -n "${VIRTUAL_ENV}" ]]; then
+    user_info="${user_info} [$(basename ${VIRTUAL_ENV})]"
+  fi
+
   [[ -n "${user_info}" ]] && echo "${user_info}|${color}"
 }
+
 
 function __powerline_cwd_prompt {
   echo "\w|${CWD_PROMPT_COLOR}"
